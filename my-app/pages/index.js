@@ -17,7 +17,7 @@ export default function Home() {
     Recipe name, ingredients using precise mesurements, instructions.
     `;
 
-    const generate = async (prompt: any) => {
+    const generate = async (prompt) => {
         
         const completion = await openai.createCompletion({
             model: "text-davinci-003",
